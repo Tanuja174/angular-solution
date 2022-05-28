@@ -1,0 +1,16 @@
+
+<h2 style="text-align: center;">Part 3 - Table Functions</h2>
+<table class="table table-hover table-stripeed">
+    <thead style="background-color: #F7F7F7;">
+      <th>Product Name<img src="../assets/caret-down-fill.svg" [ngClass]="(isSort && selectedColumn === 'Product Name') ? 'imgToggleUp' : 'imgToggleDown'" class="arrow" (click)="toggleArrow('Product Name')"></th>
+      <th>Price<img src="../assets/caret-down-fill.svg" [ngClass]="(isSort && selectedColumn === 'Price') ? 'imgToggleUp' : 'imgToggleDown'" class="arrow" (click)="toggleArrow('Price')"></th>
+      <th>Category<img src="../assets/caret-down-fill.svg" [ngClass]="(isSort && selectedColumn === 'Category') ? 'imgToggleUp' : 'imgToggleDown'" class="arrow" (click)="toggleArrow('Category')"></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of tabledata">
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.category}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,32 @@
+input {
+    padding: 6px;
+}
+.tableContainer {
+   padding: 40px 40px 40px 40px;
+    width: 50%;
+    margin-left: auto;
+      margin-right: auto;
+}
+label {
+font-size: 14px;
+color: #1A1A1A;
+font-weight: normal;
+margin-bottom: 0px;
+} 
+
+::placeholder {
+color: #737373;
+font-size: 14px;
+font-weight: normal;
+}
+.form-group {
+    margin-bottom: 24px;
+}
+.btn-primary {
+font-size: 14px;
+font-weight: normal;
+background-color: #0063E6;
+}
+.btn-primary:hover {
+    background-color: #F0F6FF;
+}
